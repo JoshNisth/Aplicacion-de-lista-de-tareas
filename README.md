@@ -10,7 +10,8 @@ README
 - Domingo 18/02/24
 - Martes 20/02/24
 - Miercoles 21/02/24
-En estas fechas se realizaran reuniones, codificacion y revision de versiones y retroalimentacion entre los integrantes del grupo
+  
+ En estas fechas se realizaran reuniones, codificacion y revision de versiones y retroalimentacion entre los integrantes del grupo
 ## Ramas.
 – Las ramas que tendremos en la siguiente aplicación de tareas serán:
 -	main/ramas principal
