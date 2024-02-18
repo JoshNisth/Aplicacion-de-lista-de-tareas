@@ -1,10 +1,4 @@
-/*
-Autor: Josue Nisthaus
-EJERCICIO 2
-Cree un programa que use una ArrayList de números reales. El programa debe permitirle
-mostrar un menú donde pueda agregar números, buscar números, cambiar números,
-eliminar números e insertar números en las posiciones especificadas.
-*/
+
 import java.util.*;
 
 public class MenuTareas {
