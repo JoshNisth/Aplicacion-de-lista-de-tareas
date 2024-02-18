@@ -1,39 +1,42 @@
 import java.util.*;
-
 public class MenuTareas {
-    public static void main(String[] args) {
-        ArrayList <Integer> nLista = new ArrayList();
+    public void mostrarMenu() {
         Scanner sc = new Scanner(System.in);
-        int i = 0;
-        for(; i != 7; ) {
-            System.out.println("------- MENU ------");
-            System.out.println("1. Agregar Tarea:");
-            System.out.println("2. Marcar Tarea Completada:");
-            System.out.println("3. Eliminar Tarea:");
-            System.out.println("4. Generar reporte general de tareas:");
-            System.out.println("5. Generar reporte Tareas completadas:");
-            System.out.println("6. Generar reporte Tareas pendientes:");
+        int opcion = 0;
+        while (opcion != 7) {
+            System.out.println("------- MENU  : ------");
+            System.out.println("1. Agregar Tarea");
+            System.out.println("2. Marcar Tarea Completada");
+            System.out.println("3. Eliminar Tarea");
+            System.out.println("4. Generar reporte general de tareas");
+            System.out.println("5. Generar reporte Tareas completadas");
+            System.out.println("6. Generar reporte Tareas pendientes");
             System.out.println("7. Salir");
-            System.out.println("--------------------------");
             System.out.print("Seleccione una opción: ");
-            i = sc.nextInt();
-            switch(i) {
+            opcion = sc.nextInt();
+            switch (opcion) {
                 case 1:
+                    Tarea.agregarTarea(sc);
                     pausa();
                     break;
                 case 2:
+                    Tarea.marcarTareaComoCompletada(sc);
                     pausa();
                     break;
                 case 3:
+                    Tarea.eliminarTareas(sc);
                     pausa();
                     break;
                 case 4:
+                    Tarea.mostrarListaTareas();
                     pausa();
                     break;
                 case 5:
+                    Tarea.mostrarTareasCompletadas();
                     pausa();
                     break;
                 case 6:
+                    Tarea.mostrarTareasPendientes();
                     pausa();
                     break;
                 case 7:
@@ -41,21 +44,14 @@ public class MenuTareas {
                     break;
                 default:
                     System.out.println("Ingrese una opcion valida");
-                    pausa();
                     break;
             }
         }
         sc.close();
     }
-    
 
-    //void para que la pantalla se muestre el contenido hasta que el usuario quiera cmabiarlo
     static void pausa() {
         System.out.println("\nPresione ENTER para continuar...");
         new java.util.Scanner(System.in).nextLine();
     }
-
-
-
 }
-
